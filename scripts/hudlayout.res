@@ -1,6 +1,6 @@
 "Resource/HudLayout.res"
 {
-	HudHealth [!$DECK]
+	HudHealth
 	{
 		"fieldName"		"HudHealth"
 		"xpos"	"16"
@@ -50,7 +50,7 @@
 	    "visible" "0"
 	    "enabled" "1"
 		"xpos"	"16"
-		"ypos"	"410" [!$DECK]
+		"ypos"	"410"
 		"ypos"	"400" [$DECK]
 	    "wide" "200"
 	    "tall" "60"
@@ -98,7 +98,7 @@
 		"text_xpos"			"33"
 	}
 	
-	HudSuit [!$DECK]
+	HudSuit
 	{
 		"fieldName"		"HudSuit"
 		"xpos"	"140"
@@ -173,7 +173,7 @@
 		"digit2_ypos" "12"
 	}
 
-	HudAmmoSecondary [!$DECK]
+	HudAmmoSecondary
 	{
 		"fieldName" "HudAmmoSecondary"
 		"xpos"	"r76"
@@ -208,7 +208,7 @@
 		"digit_ypos" "0"
 	}
 	
-	HudSuitPower [!$DECK]
+	HudSuitPower
 	{
 		"fieldName" "HudSuitPower"
 		"visible" "1"
@@ -306,24 +306,24 @@
 		"xpos_hidef"	"306"		[$X360]		// aligned to left
 		"xpos_lodef"	"c-18"		[$X360]		// centered in screen
 		"ypos"	"428"		[$X360]				
-		"tall"  "24" [!$DECK]
+		"tall"  "24"
 		"tall"  "30" [$DECK]
-		"wide"	"36" [!$DECK]
+		"wide"	"36"
 		"wide"	"46" [$DECK]
-		"font"	"WeaponIconsSmall" [!$DECK]
+		"font"	"WeaponIconsSmall"
 		"font"	"FlashlightDeck" [$DECK]
 		
 		"icon_xpos"	"4"
-		"icon_ypos" "-8" [!$DECK]
+		"icon_ypos" "-8"
 		"icon_ypos" "-12"  [$DECK]
 		
 		"BarInsetX" "4"
-		"BarInsetY" "18" [!$DECK]
+		"BarInsetY" "18"
 		"BarInsetY" "22" [$DECK]
-		"BarWidth" "28" [!$DECK]
+		"BarWidth" "28"
 		"BarWidth" "36" [$DECK]
-		"BarHeight" "2" [!$DECK]
-		"BarChunkWidth" "2" [!$DECK]
+		"BarHeight" "2"
+		"BarChunkWidth" "2"
 		"BarHeight" "3" [$DECK]
 		"BarChunkWidth" "3" [$DECK]
 		"BarChunkGap" "1"
@@ -489,13 +489,13 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	"r272" [$DECK]
-		"xpos"	"r252" [!$DECK]
+		"xpos"	"r252"
 		"ypos"	"40"
 		"wide"	 "248"
 		"tall"	 "320"
 
 		"history_gap"	"64" [$DECK]
-		"history_gap"	"56" [!$DECK]
+		"history_gap"	"56"
 		"icon_inset"	"38"
 		"text_inset"	"36"
 		"text_inset"	"26"

@@ -1,24 +1,18 @@
 "Logitech G-15 Keyboard Layout"
 {
-	"game"		"Counter-Strike Source"
+	"game"		"Half-Life 2 Deathmatch"
 	"chatlines"	"8"  // number of chat lines to keep (1-64)
 	
 	// These need to be 1bpp HICONs
 	"icons"
 	{
-		"cssicon"			"resource/game_1bpp.ico"
-		"icon_TERRORIST"	"resource/icon_t_1bpp.ico"
-		"icon_CT"			"resource/icon_ct_1bpp.ico"
+		"game_icon"			"resource/game_1bpp.ico"
 
 	}
 	
 	// Global replacements
 	"replace"
-	{
-		"team_TERRORIST"	"Terrorists"
-		"team_CT"			"Counter-Terrorists"
-		"team_Unassigned"	"Unassigned"
-		"team_Spectator"	"Spectator"
+	{		
 		"alive_true"		"Alive"
 		"alive_false"		"DEAD"
 	}
@@ -32,8 +26,10 @@
 		"static_icon"
 		{
 			"x"			"0"
-			"y"			"10"
-			"name"		"cssicon"
+			"y"			"5"
+			"w"			"32"
+			"h"			"32"
+			"name"		"game_icon"
 		}
 		
 		"static_text"
@@ -43,7 +39,7 @@
 			"x"			"34"
 			"y"			"10"
 			"w"			"120"
-			"text"		"Counter-Strike:"
+			"text"		"Half-Life 2:"
 		}
 			
 		"static_text"
@@ -53,7 +49,7 @@
 			"x"			"34"
 			"y"			"25"
 			"w"			"120"
-			"text"		"Source"
+			"text"		"Death Match"
 		}
 			
 //		"icon"
@@ -73,18 +69,10 @@
 			"x"			"10"
 			"y"			"4"
 			"w"			"150"
-			"text"		"Team:  team_%(localteam)m_szTeamName%"
+			"text"		"Team:  %(localteam)m_szTeamName%"
 		}
 	
-		"static_icon"
-		{
-			"x"			"144"
-			"y"			"4"
-			"w"			"16"
-			"h"			"16"
-			"name"		"icon_%(localteam)m_szTeamName%"
-		}
-			
+		
 		"static_text"
 		{
 			"size"		"medium"
@@ -129,7 +117,7 @@
 			"x"			"12"
 			"y"			"2"
 			"w"			"85"
-			"text"		"team_%(localteam)m_szTeamName"
+			"text"		"%(localteam)m_szTeamName%"
 			"header"	"1"
 		}
 		
