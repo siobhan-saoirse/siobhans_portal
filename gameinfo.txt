@@ -260,6 +260,63 @@
 		"mp_coop_credits"  1
 		"e1912"  1
 		"devtest"  1
+		"mp_coop_2paints_1bridge"   1
+		"mp_coop_bridge_catch"   1
+		"mp_coop_catapult_catch"   1
+		"mp_coop_laser_tbeam"   1
+		"mp_coop_lobby_3"   1
+		"mp_coop_paint_conversion"   1
+		"mp_coop_paint_crazy_box"   1
+		"mp_coop_paint_rat_maze"   1
+		"mp_coop_separation_1"   1
+		"mp_coop_tripleaxis"   1
+		"mp_coop_community_hub"   1
+		"ep2_background01"   1
+		"ep2_background02"   1
+		"ep2_background02a"   1
+		"ep2_background03"   1
+		"ep2_outland_01"   1
+		"ep2_outland_01a"   1
+		"ep2_outland_02"   1
+		"ep2_outland_03"   1
+		"ep2_outland_04"   1
+		"ep2_outland_05"   1
+		"ep2_outland_06"   1
+		"ep2_outland_06a"   1
+		"ep2_outland_07"   1
+		"ep2_outland_08"   1
+		"ep2_outland_09"   1
+		"ep2_outland_10"   1
+		"ep2_outland_10a"   1
+		"ep2_outland_11"   1
+		"ep2_outland_11a"   1
+		"ep2_outland_11b"   1
+		"ep2_outland_12"   1
+		"ep2_outland_12a"   1
+		"credits"   1
+		"ep1_background01"   1
+		"ep1_background01a"   1
+		"ep1_background02"   1
+		"ep1_c17_00"   1
+		"ep1_c17_00a"   1
+		"ep1_c17_01"   1
+		"ep1_c17_01a"   1
+		"ep1_c17_02"   1
+		"ep1_c17_02a"   1
+		"ep1_c17_02b"   1
+		"ep1_c17_05"   1
+		"ep1_c17_06"   1
+		"ep1_citadel_00"   1
+		"ep1_citadel_00_demo"   1
+		"ep1_citadel_01"   1
+		"ep1_citadel_02"   1
+		"ep1_citadel_02b"   1
+		"ep1_citadel_03"   1
+		"ep1_citadel_04"   1
+		"background01"   1
+		"d2_lostcoast"   1
+		"test_hardware"   1
+		"vst_lostcoast"   1
 
 	}
 	FileSystem
