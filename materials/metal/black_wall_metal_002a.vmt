@@ -7,6 +7,13 @@ $bumpmap "metal/black_wall_metal_002_height-ssbump"
 $reflectivity "[ 0.6 0.6 0.6 ]" 
 $ssbump 1
 $ssbumpmathfix 1
+$envmap "metal/black_wall_envmap_002a"
+hdr
+{
+$envmap "metal/black_wall_envmap_002a_hdr"
+}
+$envmaplightscale .6
+
 $normalmapalphaenvmapmask 1
 $envmapcontrast 1
 $envmapsaturation .2
