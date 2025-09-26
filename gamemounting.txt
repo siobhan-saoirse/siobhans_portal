@@ -1,0 +1,121 @@
+"gamemounting.txt"
+{
+	"Portal"
+	{
+		"appid"		"400"
+		"required"	"1"
+		
+		"paths"
+		{
+			"local"			"portal"
+			"local"			"portal/portal_sound_vo_english.vpk"
+			"local"			"portal/portal_pak.vpk"
+
+			"dedicated"			"portal"
+			"dedicated"			"portal/portal_sound_vo_english.vpk"
+			"dedicated"			"portal/portal_pak.vpk"
+		}
+	}
+	"Portal 2"
+	{
+		"appid"		"620"
+		"required"	"1"
+		
+		"paths"
+		{
+			"local"			"portal2"
+			"local"			"portal2/pak01.vpk"
+			"local"			"portal2_dlc1"
+			"local"			"portal2_dlc1/pak01.vpk"
+			"local"			"portal2_dlc2"
+			"local"			"portal2_dlc2/pak01.vpk"
+			"local"			"update"
+			"local"			"update/pak01.vpk"
+
+			"dedicated"			"portal2"
+			"dedicated"			"portal2/pak01.vpk"
+			"dedicated"			"portal2_dlc1"
+			"dedicated"			"portal2_dlc1/pak01.vpk"
+			"dedicated"			"portal2_dlc2"
+			"dedicated"			"portal2_dlc2/pak01.vpk"
+			"dedicated"			"update"
+			"dedicated"			"update/pak01.vpk"
+		}
+	}
+
+	"Half-Life 2: Episode Two"
+	{
+		"appid"		"420"
+		"required"	"0"
+		
+		"paths"
+		{
+			"local"		"ep2"
+			"local"		"ep2/ep2_sound_vo_english.vpk"
+			"local"		"ep2/ep2_pak.vpk"
+			
+			"dedicated"		"ep2"
+			"dedicated"		"ep2/ep2_sound_vo_english.vpk"
+			"dedicated"		"ep2/ep2_pak.vpk"
+		}
+	}
+
+	"Half-Life 2: Episode One"
+	{
+		"appid"		"380"
+		"required"	"0"
+		
+		"paths"
+		{
+			"local"		"episodic"
+			"local"		"episodic/ep1_sound_vo_english.vpk"
+			"local"		"episodic/ep1_pak.vpk"
+			
+			"dedicated"		"episodic"
+			"dedicated"		"episodic/ep1_sound_vo_english.vpk"
+			"dedicated"		"episodic/ep1_pak.vpk"
+		}
+	}
+
+	"Half-Life 2"	[$DEDICATED]
+	{
+		"appid"		"220"
+		"required"	"0"
+		
+		"paths"
+		{
+			"dedicated"		"hl2/hl2_misc_dir.vpk"
+			"dedicated"		"hl2/hl2_sound_misc_dir.vpk"
+			"dedicated"		"hl2/hl2_sound_vo_english_dir.vpk"
+			"dedicated"		"hl2/hl2_textures_dir.vpk"
+			"dedicated"		"hl2/hl2_pak_dir.vpk"
+			"dedicated"		"hl2"
+			"dedicated"		"hl1/hl1_sound_vo_english_dir.vpk"
+			"dedicated"		"hl1/hl1_pak_dir.vpk"
+			"dedicated"		"ep2"
+			"dedicated"		"ep2/ep2_sound_vo_english_dir.vpk"
+			"dedicated"		"ep2/ep2_pak_dir.vpk"
+			"dedicated"		"episodic"
+			"dedicated"		"episodic/ep1_sound_vo_english_dir.vpk"
+			"dedicated"		"episodic/ep1_pak_dir.vpk"
+		}
+	}
+
+	"Half-Life 2: Lost Coast"
+	{
+		"appid"		"340"
+		"required"	"0"
+		"notmainmenu"	"1"
+		
+		"paths"
+		{
+			"local"			"lostcoast"
+			"local"			"lostcoast/lostcoast_sound_vo_english.vpk"
+			"local"			"lostcoast/lostcoast_pak.vpk"
+			
+			"dedicated"		"lostcoast"
+			"dedicated"		"lostcoast/lostcoast_sound_vo_english.vpk"
+			"dedicated"		"lostcoast/lostcoast_pak.vpk"
+		}
+	}
+}

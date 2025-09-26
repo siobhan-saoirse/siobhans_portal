@@ -1,7 +1,7 @@
 "GameInfo"
 {
 	game		"Siobhan's Portal"
-	title 		"Siobhan's Portal"
+	title 		"Portal"
 	type		multiplayer_only
 	nodifficulty	1
 	hasportals	1
@@ -197,26 +197,12 @@
 			// Note that this folder is scanned only when the game is booted.
 			game+mod			|gameinfo_path|/custom/*
 
-			// We search VPK files before ordinary folders, because most files will be found in
-			// VPK and we can avoid making thousands of file system calls to attempt to open files
-			// in folders where they don't exist.  (Searching a VPK is much faster than making an operating
-			// system call.)
-			game				"C:\Program Files (x86)\Steam\steamapps\common\Portal\portal"
-			game_lv				"C:\Program Files (x86)\Steam\steamapps\common\Portal\portal\portal_lv.vpk"
-			game+mod			"C:\Program Files (x86)\Steam\steamapps\common\Portal\portal\portal_sound_vo_english.vpk"
-			game+mod			"C:\Program Files (x86)\Steam\steamapps\common\Portal\portal\portal_pak.vpk"
-			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2"
-			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\episodic"
-			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\ep2"
-			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\episodic\ep1_pak.vpk"
-			game				"C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\ep2\ep2_pak.vpk"
 			game	"C:\Program Files (x86)\Steam\steamapps\common\Portal 2\portal2\portal2"
 			game				|all_source_engine_paths|hl2/hl2_textures.vpk
 			game				|all_source_engine_paths|hl2/hl2_sound_vo_english.vpk
 			game				|all_source_engine_paths|hl2/hl2_sound_misc.vpk
 			game				|all_source_engine_paths|hl2/hl2_misc.vpk
 			platform			|all_source_engine_paths|platform/platform_misc.vpk
-			game	"C:\Program Files (x86)\Steam\steamapps\common\Portal 2\portal2\pak01.vpk"
 
 			// Where the game's binaries are
 			gamebin				|gameinfo_path|bin

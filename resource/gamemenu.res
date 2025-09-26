@@ -56,17 +56,10 @@
 		"InGameOrder" "50"
 		"notmulti" "1"
 	}
-	"16_1"
-	{
-		"label"	"#GameUI_Worskhop_MenuName"
-		"command" "openworkshopdialog"
-		"InGameOrder" "72"
-	}
 	"17"
 	{
 		"label" "#GameUI_GameMenu_ChangeGame"
 		"command" "OpenChangeGameDialog"
-		"notsteam" "1"
 		"notsingle" "1"
 		"notmulti" "1"
 		"HelpText" "#GameUI_MainMenu_Hint_ChangeGame"
