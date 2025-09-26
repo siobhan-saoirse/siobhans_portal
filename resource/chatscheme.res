@@ -24,6 +24,10 @@ Scheme
 		"Black"				"0 0 0 255"
 
 		"Blank"				"0 0 0 0"
+		
+		"ScrollBarGrey"		"70 70 70 192"
+		"ScrollBarHilight"	"140 140 140 192"
+		"ScrollBarDark"		"70 70 70 192"
 	}
 
 	///////////////////// BASE SETTINGS ////////////////////////
@@ -41,7 +45,7 @@ Scheme
 		Button.BgColor					"Blank"
 		Button.ArmedTextColor			"White"
 		Button.ArmedBgColor				"Blank"				[$WIN32]
-		Button.ArmedBgColor				"190 115 0 255"		[$X360]
+		Button.ArmedBgColor				"190 115 0 255"		[$GAMECONSOLE]
 		Button.DepressedTextColor		"White"
 		Button.DepressedBgColor			"Blank"
 		Button.FocusBorderColor			"Black"
@@ -64,9 +68,9 @@ Scheme
 		Frame.ClientInsetX				8
 		Frame.ClientInsetY				6
 		Frame.BgColor					"160 160 160 128"	[$WIN32]
-		Frame.BgColor					"80 80 80 192"		[$X360]
+		Frame.BgColor					"80 80 80 192"		[$GAMECONSOLE]
 		Frame.OutOfFocusBgColor			"160 160 160 32"	[$WIN32]
-		Frame.OutOfFocusBgColor			"80 80 80 192"		[$X360]
+		Frame.OutOfFocusBgColor			"80 80 80 192"		[$GAMECONSOLE]
 		Frame.FocusTransitionEffectTime	"0.3"	// time it takes for a window to fade in/out on focus/out of focus
 		Frame.TransitionEffectTime		"0.3"	// time it takes for a window to fade in/out on open/close
 		Frame.AutoSnapRange				"0"
@@ -130,17 +134,24 @@ Scheme
 		RichText.SelectedTextColor		"Black"
 		RichText.SelectedBgColor		"Orange"
 
-		ScrollBar.Wide					17
+		ScrollBar.Wide					12
+		ScrollBarNobBorder.Outer 			"ScrollBarDark"
+		ScrollBarNobBorder.Inner 			"ScrollBarGrey"
+		ScrollBarNobBorderHover.Inner 			"ScrollBarGrey"
+		ScrollBarNobBorderDragging.Inner 		"ScrollBarHilight"
 
-		ScrollBarButton.FgColor				"White"
-		ScrollBarButton.BgColor				"Blank"
-		ScrollBarButton.ArmedFgColor		"White"
-		ScrollBarButton.ArmedBgColor		"Blank"
-		ScrollBarButton.DepressedFgColor	"White"
-		ScrollBarButton.DepressedBgColor	"Blank"
+		ScrollBarButton.FgColor				"ScrollBarHilight"
+		ScrollBarButton.BgColor				"ScrollBarGrey"
+		ScrollBarButton.ArmedFgColor		"ScrollBarHilight"
+		ScrollBarButton.ArmedBgColor		"ScrollBarGrey"
+		ScrollBarButton.DepressedFgColor	"ScrollBarHilight"
+		ScrollBarButton.DepressedBgColor	"ScrollBarGrey"
 
-		ScrollBarSlider.FgColor				"Blank"			// nob color
-		ScrollBarSlider.BgColor				"255 255 255 64"	// slider background color
+		ScrollBarSlider.Inset				1			// Number of pixels to inset scroll bar nob
+		ScrollBarSlider.FgColor				"ScrollBarGrey"		// nob color
+		ScrollBarSlider.BgColor				"Blank"		// slider background color
+		ScrollBarSlider.NobFocusColor			"ScrollBarHilight"		// nob mouseover color
+		ScrollBarSlider.NobDragColor			"ScrollBarHilight"		// nob active drag color
 
 		SectionedListPanel.HeaderTextColor	"White"
 		SectionedListPanel.HeaderBgColor	"Blank"
@@ -180,12 +191,12 @@ Scheme
 
 		// scheme-specific colors
 		MainMenu.TextColor			"White"				[$WIN32]
-		MainMenu.TextColor			"200 200 200 255"	[$X360]
+		MainMenu.TextColor			"200 200 200 255"	[$GAMECONSOLE]
 		MainMenu.ArmedTextColor		"200 200 200 255"	[$WIN32]
-		MainMenu.ArmedTextColor		"White"				[$X360]
+		MainMenu.ArmedTextColor		"White"				[$GAMECONSOLE]
 		MainMenu.DepressedTextColor	"192 186 80 255"
 		MainMenu.MenuItemHeight		"16"	[$WIN32]
-		MainMenu.MenuItemHeight		"32"	[$X360]
+		MainMenu.MenuItemHeight		"32"	[$GAMECONSOLE]
 		MainMenu.Inset				"32"
 		MainMenu.Backdrop			"0 0 0 156"
 
@@ -195,7 +206,7 @@ Scheme
 		NewGame.TextColor			"White"
 		NewGame.FillColor			"0 0 0 255"
 		NewGame.SelectionColor		"Orange"	[$WIN32]
-		NewGame.SelectionColor		"0 0 0 255"	[$X360]
+		NewGame.SelectionColor		"0 0 0 255"	[$GAMECONSOLE]
 		NewGame.DisabledColor		"128 128 128 196"
 	}
 
@@ -218,23 +229,25 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
+				"name"		"UniversLTStd-LightCn"
 				"tall"		"12"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
 				"yres"	"480 599"
+				"antialias"	"1"
 			}
 			"2"
 			{
-				"name"		"Verdana"
+				"name"		"UniversLTStd-LightCn"
 				"tall"		"13"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
 				"yres"	"600 767"
+				"antialias"	"1"
 			}
 			"3"
 			{
-				"name"		"Verdana"
+				"name"		"UniversLTStd-LightCn"
 				"tall"		"14"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
@@ -243,7 +256,7 @@ Scheme
 			}
 			"4"
 			{
-				"name"		"Verdana"
+				"name"		"UniversLTStd-LightCn"
 				"tall"		"16"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
@@ -252,7 +265,7 @@ Scheme
 			}
 			"5"
 			{
-				"name"		"Verdana"
+				"name"		"UniversLTStd-LightCn"
 				"tall"		"20"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
@@ -272,6 +285,7 @@ Scheme
 				"weight"	"0"
 				"yres"		"480 599"
 				"symbol"	"1"
+				"antialias"	"1"
 			}
 			"2"
 			{
@@ -280,6 +294,7 @@ Scheme
 				"weight"	"0"
 				"yres"		"600 767"
 				"symbol"	"1"
+				"antialias"	"1"
 			}
 			"3"
 			{
@@ -288,6 +303,7 @@ Scheme
 				"weight"	"0"
 				"yres"		"768 1023"
 				"symbol"	"1"
+				"antialias"	"1"
 			}
 			"4"
 			{
@@ -296,6 +312,7 @@ Scheme
 				"weight"	"0"
 				"yres"		"1024 1199"
 				"symbol"	"1"
+				"antialias"	"1"
 			}
 			"5"
 			{
@@ -304,6 +321,7 @@ Scheme
 				"weight"	"0"
 				"yres"		"1200 10000"
 				"symbol"	"1"
+				"antialias"	"1"
 			}
 		}
 
@@ -311,43 +329,38 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
+				"name"		"UniversLTStd-Cn"
 				"tall"		"12"
 				"weight"	"700"
-				"yres"		"480 599"
-				"dropshadow"	"1"
+				"antialias"	"1"
 			}
 			"2"
 			{
-				"name"		"Verdana"
+				"name"		"UniversLTStd-Cn"
 				"tall"		"14"
 				"weight"	"700"
-				"yres"		"600 767"
-				"dropshadow"	"1"
+				"antialias"	"1"
 			}
 			"3"
 			{
-				"name"		"Verdana"
+				"name"		"UniversLTStd-Cn"
 				"tall"		"15"
 				"weight"	"700"
-				"yres"		"768 1023"
-				"dropshadow"	"1"
+				"antialias"	"1"
 			}
 			"4"
 			{
-				"name"		"Verdana"
+				"name"		"UniversLTStd-Cn"
 				"tall"		"17"
 				"weight"	"700"
-				"yres"		"1024 1199"
-				"dropshadow"	"1"
+				"antialias"	"1"
 			}
 			"5"
 			{
-				"name"		"Verdana"
+				"name"		"UniversLTStd-Cn"
 				"tall"		"22"
 				"weight"	"700"
-				"yres"		"1200 10000"
-				"dropshadow"	"1"
+				"antialias"	"1"
 			}
 		}
 
@@ -757,6 +770,15 @@ Scheme
 	CustomFontFiles
 	{
 		"1"		"resource/HALFLIFE2.ttf"
-		"2"		"resource/HL2EP2.ttf"		
+
+		"2"		"vgui/fonts/univercb.ttf"		[!$TURKISH]
+		"3"		"vgui/fonts/univercl.ttf"		[!$TURKISH]
+		"4"		"vgui/fonts/universc.ttf"		[!$TURKISH]
+		"5"		"vgui/fonts/univercb_t.ttf"	[$TURKISH]
+		"6"		"vgui/fonts/univercl_t.ttf"	[$TURKISH]
+		"7"		"vgui/fonts/universc_t.ttf"	[$TURKISH]
+		"8"		"vgui/fonts/consola.ttf"
+		"9"		"vgui/fonts/unltcyr5.ttf"	
+		"10"	"vgui/fonts/unltcyr6.ttf"	
 	}
 }
