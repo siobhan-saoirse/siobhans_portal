@@ -77,7 +77,7 @@
 		"tabPosition"			"0"
 		"navUp"					"BtnMultiplayer"
 		"navDown"				"BtnStatsAndAchievements"
-		"labelText"				"#L4D360UI_MainMenu_SignIn"
+		"labelText"				"#GameUI_GameMenu_SinglePlayer"
 		"tooltiptext"			"#L4D360UI_MainMenu_ChangeGamers_Tip"
 		"style"					"MainMenuButton"
 		"command"				"engine maxplayers 1;map testchmb_a_00"
