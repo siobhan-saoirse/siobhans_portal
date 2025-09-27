@@ -1,3 +1,31 @@
+// =========================
+// ALIEN SWARM MISC SOUNDS
+// =========================
+
+"Misc.MainUI"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"		"1.0"
+	"pitch"			"100"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"*#music\portal_procedural_jiggle_bone.mp3"
+		"wave"	"*#music\portal_taste_of_blood.mp3"
+		"wave"	"*#music\portal_android_hell.mp3"
+		"wave"	"*#music\portal_self_esteem_fund.mp3"
+		"wave"	"*#music\portal_no_cake_for_you.mp3"
+		"wave"	"*#music\portal_4000_degrees_kelvin.mp3"
+		"wave"	"*#music\portal_stop_what_are_you_doing.mp3"
+		"wave"	"*#music\portal_party_escort.mp3"
+		"wave"	"*#music\portal_you_cant_escape_you_know.mp3"
+		"wave"	"*#music\portal_youre_not_a_good_person.mp3"
+		"wave"	"*#music\portal_still_alive.mp3"
+	}
+}
+
 "Error"
 {
 	"channel"		"CHAN_STATIC"
