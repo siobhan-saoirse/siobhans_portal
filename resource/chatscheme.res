@@ -45,7 +45,6 @@ Scheme
 		Button.BgColor					"Blank"
 		Button.ArmedTextColor			"White"
 		Button.ArmedBgColor				"Blank"				[$WIN32]
-		Button.ArmedBgColor				"190 115 0 255"		[$GAMECONSOLE]
 		Button.DepressedTextColor		"White"
 		Button.DepressedBgColor			"Blank"
 		Button.FocusBorderColor			"Black"
@@ -68,9 +67,7 @@ Scheme
 		Frame.ClientInsetX				8
 		Frame.ClientInsetY				6
 		Frame.BgColor					"160 160 160 128"	[$WIN32]
-		Frame.BgColor					"80 80 80 192"		[$GAMECONSOLE]
 		Frame.OutOfFocusBgColor			"160 160 160 32"	[$WIN32]
-		Frame.OutOfFocusBgColor			"80 80 80 192"		[$GAMECONSOLE]
 		Frame.FocusTransitionEffectTime	"0.3"	// time it takes for a window to fade in/out on focus/out of focus
 		Frame.TransitionEffectTime		"0.3"	// time it takes for a window to fade in/out on open/close
 		Frame.AutoSnapRange				"0"
@@ -191,12 +188,9 @@ Scheme
 
 		// scheme-specific colors
 		MainMenu.TextColor			"White"				[$WIN32]
-		MainMenu.TextColor			"200 200 200 255"	[$GAMECONSOLE]
 		MainMenu.ArmedTextColor		"200 200 200 255"	[$WIN32]
-		MainMenu.ArmedTextColor		"White"				[$GAMECONSOLE]
 		MainMenu.DepressedTextColor	"192 186 80 255"
 		MainMenu.MenuItemHeight		"16"	[$WIN32]
-		MainMenu.MenuItemHeight		"32"	[$GAMECONSOLE]
 		MainMenu.Inset				"32"
 		MainMenu.Backdrop			"0 0 0 156"
 
@@ -206,7 +200,6 @@ Scheme
 		NewGame.TextColor			"White"
 		NewGame.FillColor			"0 0 0 255"
 		NewGame.SelectionColor		"Orange"	[$WIN32]
-		NewGame.SelectionColor		"0 0 0 255"	[$GAMECONSOLE]
 		NewGame.DisabledColor		"128 128 128 196"
 	}
 
@@ -230,46 +223,8 @@ Scheme
 			"1"
 			{
 				"name"		"UniversLTStd-LightCn"
-				"tall"		"12"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"	"480 599"
-				"antialias"	"1"
-			}
-			"2"
-			{
-				"name"		"UniversLTStd-LightCn"
-				"tall"		"13"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"	"600 767"
-				"antialias"	"1"
-			}
-			"3"
-			{
-				"name"		"UniversLTStd-LightCn"
 				"tall"		"14"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"	"768 1023"
-				"antialias"	"1"
-			}
-			"4"
-			{
-				"name"		"UniversLTStd-LightCn"
-				"tall"		"16"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"	"1024 1199"
-				"antialias"	"1"
-			}
-			"5"
-			{
-				"name"		"UniversLTStd-LightCn"
-				"tall"		"20"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
-				"yres"	"1200 6000"
+				"weight"	"700"
 				"antialias"	"1"
 			}
 		}
@@ -285,7 +240,6 @@ Scheme
 				"weight"	"0"
 				"yres"		"480 599"
 				"symbol"	"1"
-				"antialias"	"1"
 			}
 			"2"
 			{
@@ -294,7 +248,6 @@ Scheme
 				"weight"	"0"
 				"yres"		"600 767"
 				"symbol"	"1"
-				"antialias"	"1"
 			}
 			"3"
 			{
@@ -303,7 +256,6 @@ Scheme
 				"weight"	"0"
 				"yres"		"768 1023"
 				"symbol"	"1"
-				"antialias"	"1"
 			}
 			"4"
 			{
@@ -312,7 +264,6 @@ Scheme
 				"weight"	"0"
 				"yres"		"1024 1199"
 				"symbol"	"1"
-				"antialias"	"1"
 			}
 			"5"
 			{
@@ -321,7 +272,6 @@ Scheme
 				"weight"	"0"
 				"yres"		"1200 10000"
 				"symbol"	"1"
-				"antialias"	"1"
 			}
 		}
 
@@ -330,35 +280,7 @@ Scheme
 			"1"
 			{
 				"name"		"UniversLTStd-Cn"
-				"tall"		"12"
-				"weight"	"700"
-				"antialias"	"1"
-			}
-			"2"
-			{
-				"name"		"UniversLTStd-Cn"
-				"tall"		"14"
-				"weight"	"700"
-				"antialias"	"1"
-			}
-			"3"
-			{
-				"name"		"UniversLTStd-Cn"
-				"tall"		"15"
-				"weight"	"700"
-				"antialias"	"1"
-			}
-			"4"
-			{
-				"name"		"UniversLTStd-Cn"
-				"tall"		"17"
-				"weight"	"700"
-				"antialias"	"1"
-			}
-			"5"
-			{
-				"name"		"UniversLTStd-Cn"
-				"tall"		"22"
+				"tall"		"24"
 				"weight"	"700"
 				"antialias"	"1"
 			}
@@ -487,7 +409,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "ScrollBarHilight"
 					"offset" "0 1"
 				}
 			}
@@ -496,7 +418,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "ScrollBarDark"
 					"offset" "1 0"
 				}
 			}
@@ -505,7 +427,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "ScrollBarHilight"
 					"offset" "0 0"
 				}
 			}
@@ -514,7 +436,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "ScrollBarDark"
 					"offset" "0 0"
 				}
 			}
@@ -527,7 +449,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "ScrollBarHilight"
 					"offset" "0 1"
 				}
 			}
@@ -536,7 +458,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "ScrollBarDark"
 					"offset" "1 0"
 				}
 			}
@@ -545,7 +467,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "ScrollBarHilight"
 					"offset" "0 0"
 				}
 			}
@@ -554,12 +476,55 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "ScrollBarDark"
 					"offset" "0 0"
 				}
 			}
 		}
+		
+		ScrollBarSliderBorder
+		{
+			"inset" "2 2 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "ScrollBarHilight"
+					"offset" "0 1"
+				}
+			}
 
+			Right
+			{
+				"1"
+				{
+					"color" "ScrollBarDark"
+					"offset" "1 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "ScrollBarHilight"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "ScrollBarDark"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		ScrollBarSliderBorderHover ScrollBarSliderBorder
+		ScrollBarSliderBorderDragging ScrollBarSliderBorder
+		
 		TabBorder
 		{
 			"inset" "0 0 1 1"
@@ -771,12 +736,9 @@ Scheme
 	{
 		"1"		"resource/HALFLIFE2.ttf"
 
-		"2"		"vgui/fonts/univercb.ttf"		[!$TURKISH]
-		"3"		"vgui/fonts/univercl.ttf"		[!$TURKISH]
-		"4"		"vgui/fonts/universc.ttf"		[!$TURKISH]
-		"5"		"vgui/fonts/univercb_t.ttf"	[$TURKISH]
-		"6"		"vgui/fonts/univercl_t.ttf"	[$TURKISH]
-		"7"		"vgui/fonts/universc_t.ttf"	[$TURKISH]
+		"2"		"vgui/fonts/univercb.ttf"
+		"3"		"vgui/fonts/univercl.ttf"
+		"4"		"vgui/fonts/universc.ttf"
 		"8"		"vgui/fonts/consola.ttf"
 		"9"		"vgui/fonts/unltcyr5.ttf"	
 		"10"	"vgui/fonts/unltcyr6.ttf"	

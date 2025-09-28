@@ -286,7 +286,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"		
+				"name"		"UniversLTStd-Cn"		
 				"tall"		"36"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -318,7 +318,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"	
+				"name"		"UniversLTStd-Cn"	
 				"tall"		"8"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -329,7 +329,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"
+				"name"		"UniversLTStd-Cn"
 				"tall"		"10"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -340,7 +340,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"	
+				"name"		"UniversLTStd-Cn"	
 				"tall"		"12"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -351,7 +351,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"	
+				"name"		"UniversLTStd-Cn"	
 				"tall"		"14"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -362,7 +362,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"	
+				"name"		"UniversLTStd-Cn"	
 				"tall"		"16"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -373,7 +373,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"	
+				"name"		"UniversLTStd-Cn"	
 				"tall"		"18"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -384,7 +384,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"	
+				"name"		"UniversLTStd-Cn"	
 				"tall"		"20"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -450,7 +450,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"
+				"name"		"UniversLTStd-Cn"
 				"tall"		"64"
 				"weight"	"450"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -461,7 +461,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Neo Sans"
+				"name"		"UniversLTStd-Cn"
 				"tall"		"64"
 				"weight"	"450"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -1076,6 +1076,6 @@ Scheme
 	}
 	CustomFontFiles
 	{
-		"1"		"resource/NeoSans.vfont"
+		"1"		"vgui/fonts/unltcyr5.ttf"
 	}
 }
