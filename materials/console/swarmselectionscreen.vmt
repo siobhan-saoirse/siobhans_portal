@@ -1,6 +1,6 @@
 UnlitGeneric
 {
-$basetexture "console/SwarmSelectionScreen"
+$basetexture "console/background1"
 $vertexcolor 1
 $vertexalpha 1
 $ignorez 1
