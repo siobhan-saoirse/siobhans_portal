@@ -1,13 +1,11 @@
 ///////////////////////////////////////////////////////////
-// Object Control Panel scheme resource file
+// Tracker scheme resource file
 //
 // sections:
 //		Colors			- all the colors used by the scheme
 //		BaseSettings	- contains settings for app to use to draw controls
 //		Fonts			- list of all the fonts used by app
 //		Borders			- description of all the borders
-//
-// hit ctrl-alt-shift-R in the app to reload this file
 //
 ///////////////////////////////////////////////////////////
 Scheme
@@ -20,18 +18,17 @@ Scheme
 		// base colors
 		"White"				"255 255 255 255"
 		"OffWhite"			"221 221 221 255"
-		"DullWhite"			"211 211 211 255"
-		"Red"				"255 0 0 255"
-		//"LightBlue"			"68 140 203 255"
-		"LightBlue"			"66 142 192 255"
-		"GreyBlue"			"65 74 96 255"
-		"DarkBlueTrans"			"65 74 96 64"
-		
+		"DullWhite"			"190 190 190 255"
+		"Orange"			"255 155 0 255"
 		"TransparentBlack"	"0 0 0 128"
-		"DarkGrey"			"128 128 128 255"
 		"Black"				"0 0 0 255"
 
 		"Blank"				"0 0 0 0"
+		
+		"SteamLightGreen"	"157 194 80 255"
+		"AchievementsLightGrey"		"79 79 79 255"
+		"AchievementsDarkGrey"		"55 55 55 255"
+		"AchievementsInactiveFG"	"130 130 130 255"
 	}
 
 	///////////////////// BASE SETTINGS ////////////////////////
@@ -46,122 +43,126 @@ Scheme
 		Border.Selection				"0 0 0 196"			// the additional border color for displaying the default/selected button
 
 		Button.TextColor				"White"
-		Button.BgColor					"65 74 96 255"
+		Button.BgColor					"Blank"
 		Button.ArmedTextColor			"White"
-		Button.ArmedBgColor				"65 74 96 255"
+		Button.ArmedBgColor				"Blank"				[$WIN32]
+		Button.ArmedBgColor				"190 115 0 255"		[$X360]
 		Button.DepressedTextColor		"White"
-		Button.DepressedBgColor			"65 74 96 255"
-		Button.FocusBorderColor			"65 74 96 255"		
-		
-		CheckButton.TextColor			"LightBlue"
-		CheckButton.SelectedTextColor	"White"
-		CheckButton.BgColor				"TransparentBlack"
+		Button.DepressedBgColor			"Blank"
+		Button.FocusBorderColor			"Black"
+
+		CheckButton.TextColor			"White"
+		CheckButton.SelectedTextColor		"White"
+		CheckButton.BgColor			"TransparentBlack"
 		CheckButton.Border1  			"Border.Dark" 		// the left checkbutton border
 		CheckButton.Border2  			"Border.Bright"		// the right checkbutton border
-		CheckButton.Check				"White"				// color of the check itself
-
+		CheckButton.Check			"White"	// color of the check itself
+		CheckButton.HighlightFgColor		"OffWhite"
+		CheckButton.ArmedBgColor		"Blank"
+		CheckButton.DepressedBgColor		"Blank"
+		CheckButton.DisabledBgColor	   	"TransparentBlack"
+				
 		ComboBoxButton.ArrowColor		"DullWhite"
 		ComboBoxButton.ArmedArrowColor	"White"
-		ComboBoxButton.BgColor			"65 74 96 255"
-		ComboBoxButton.DisabledBgColor	"65 74 96 255"
+		ComboBoxButton.BgColor			"Blank"
+		ComboBoxButton.DisabledBgColor	"Blank"
 
-		Frame.TitleTextInsetX			12
-		Frame.ClientInsetX				6
-		Frame.ClientInsetY				4
-		//Frame.BgColor					"160 160 160 128"
-		Frame.BgColor					"65 74 96 255"
-		Frame.OutOfFocusBgColor			"65 74 96 255"
-		//Frame.OutOfFocusBgColor			"160 160 160 32"
-		Frame.FocusTransitionEffectTime	"0.3"	// time it takes for a window to fade in/out on focus/out of focus
-		Frame.TransitionEffectTime		"0.3"	// time it takes for a window to fade in/out on open/close
+		Frame.TitleTextInsetX			16
+		Frame.ClientInsetX				8
+		Frame.ClientInsetY				6
+		Frame.BgColor					"132 132 132 212"	[$WIN32]
+		Frame.BgColor					"80 80 80 192"		[$X360]
+		Frame.OutOfFocusBgColor			"132 132 132 62"	[$WIN32]
+		Frame.OutOfFocusBgColor			"80 80 80 192"		[$X360]
+		Frame.FocusTransitionEffectTime	"0.3"							// time it takes for a window to fade in/out on focus/out of focus
+		Frame.TransitionEffectTime		"0.3"				[$WIN32]	// time it takes for a window to fade in/out on open/close
+		Frame.TransitionEffectTime		"0.2"				[$X360]		// time it takes for a window to fade in/out on open/close
 		Frame.AutoSnapRange				"0"
 		FrameGrip.Color1				"200 200 200 196"
 		FrameGrip.Color2				"0 0 0 196"
-		FrameTitleButton.FgColor		"255 255 255 255"
-		FrameTitleButton.BgColor		"65 74 96 255"
+		FrameTitleButton.FgColor		"200 200 200 196"
+		FrameTitleButton.BgColor		"Blank"
 		FrameTitleButton.DisabledFgColor	"255 255 255 192"
-		FrameTitleButton.DisabledBgColor	"65 74 96 255"
-		FrameSystemButton.FgColor		"65 74 96 255"
-		FrameSystemButton.BgColor		"65 74 96 255"
+		FrameTitleButton.DisabledBgColor	"Blank"
+		FrameSystemButton.FgColor		"Blank"
+		FrameSystemButton.BgColor		"Blank"
 		FrameSystemButton.Icon			""
 		FrameSystemButton.DisabledIcon	""
+		FrameTitleBar.Font				"UiBold"		[$WIN32]
+		FrameTitleBar.Font				"DefaultLarge"	[$WIN32]
 		FrameTitleBar.TextColor			"White"
-		FrameTitleBar.BgColor			"65 74 96 255"
+		FrameTitleBar.BgColor			"Blank"
 		FrameTitleBar.DisabledTextColor	"255 255 255 192"
-		FrameTitleBar.DisabledBgColor	"65 74 96 255"
+		FrameTitleBar.DisabledBgColor	"Blank"
 
 		GraphPanel.FgColor				"White"
 		GraphPanel.BgColor				"TransparentBlack"
 
-		Label.TextDullColor				"Black"
+		Label.TextDullColor				"DullWhite"
 		Label.TextColor					"OffWhite"
-		Label.TextBrightColor			"LightBlue"
+		Label.TextBrightColor			"White"
 		Label.SelectedTextColor			"White"
-		Label.BgColor					"65 74 96 255"
+		Label.BgColor					"Blank"
 		Label.DisabledFgColor1			"117 117 117 255"
 		Label.DisabledFgColor2			"30 30 30 255"
 
 		ListPanel.TextColor					"OffWhite"
+		ListPanel.TextBgColor				"Blank"
 		ListPanel.BgColor					"TransparentBlack"
 		ListPanel.SelectedTextColor			"Black"
-		ListPanel.SelectedBgColor			"LightBlue"
-		ListPanel.SelectedOutOfFocusBgColor	"LightBlue"
-		ListPanel.EmptyListInfoTextColor	"LightBlue"
-		
-		ImagePanel.fillcolor			"65 74 96 255"
+		ListPanel.SelectedBgColor			"Orange"
+		ListPanel.SelectedOutOfFocusBgColor	"255 155 0 128"
+		ListPanel.EmptyListInfoTextColor	"OffWhite"
 
 		Menu.TextColor					"White"
-		Menu.BgColor					"TransparentBlack"
+		Menu.BgColor					"160 160 160 64"
 		Menu.ArmedTextColor				"Black"
-		Menu.ArmedBgColor				"LightBlue"
+		Menu.ArmedBgColor				"Orange"
 		Menu.TextInset					"6"
 
 		Panel.FgColor					"DullWhite"
-		Panel.BgColor					"65 74 96 255"
+		Panel.BgColor					"Blank"
 
 		ProgressBar.FgColor				"White"
 		ProgressBar.BgColor				"TransparentBlack"
 
-		PropertySheet.TextColor			"LightBlue"
+		PropertySheet.TextColor			"OffWhite"
 		PropertySheet.SelectedTextColor	"White"
-		PropertySheet.TransitionEffectTime	"0.3"	// time to change from one tab to another
-		PropertySheet.TabFont	"DefaultLarge"
+		PropertySheet.TransitionEffectTime	"0.25"	// time to change from one tab to another
 
-		RadioButton.TextColor			"DullWhite"
+		RadioButton.TextColor			"OffWhite"
 		RadioButton.SelectedTextColor	"White"
 
 		RichText.TextColor				"OffWhite"
 		RichText.BgColor				"TransparentBlack"
 		RichText.SelectedTextColor		"Black"
-		RichText.SelectedBgColor		"LightBlue"
+		RichText.SelectedBgColor		"Orange"
 
 		ScrollBar.Wide					17
 
-		ScrollBarButton.FgColor				"LightBlue"
+		ScrollBarButton.FgColor				"White"
 		ScrollBarButton.BgColor				"Blank"
 		ScrollBarButton.ArmedFgColor		"White"
 		ScrollBarButton.ArmedBgColor		"Blank"
 		ScrollBarButton.DepressedFgColor	"White"
 		ScrollBarButton.DepressedBgColor	"Blank"
 
-		ScrollBarSlider.FgColor				"GreyBlue"			// nob color
-		ScrollBarSlider.BgColor				"Black"	// slider background color
-		ScrollBarSlider.NobFocusColor		"LightBlue"
-		ScrollBarSlider.NobDragColor		"White"
+		ScrollBarSlider.FgColor				"Blank"			// nob color
+		ScrollBarSlider.BgColor				"255 255 255 64"	// slider background color
 
 		SectionedListPanel.HeaderTextColor	"White"
-		SectionedListPanel.HeaderBgColor	"65 74 96 255"
+		SectionedListPanel.HeaderBgColor	"Blank"
 		SectionedListPanel.DividerColor		"Black"
-		SectionedListPanel.TextColor		"LightBlue"
+		SectionedListPanel.TextColor		"DullWhite"
 		SectionedListPanel.BrightTextColor	"White"
 		SectionedListPanel.BgColor			"TransparentBlack"
 		SectionedListPanel.SelectedTextColor			"Black"
-		SectionedListPanel.SelectedBgColor				"LightBlue"
+		SectionedListPanel.SelectedBgColor				"Orange"
 		SectionedListPanel.OutOfFocusSelectedTextColor	"Black"
-		SectionedListPanel.OutOfFocusSelectedBgColor	"LightBlue"
+		SectionedListPanel.OutOfFocusSelectedBgColor	"255 155 0 128"
 
 		Slider.NobColor				"108 108 108 255"
-		Slider.TextColor			"127 140 127 255"
+		Slider.TextColor			"180 180 180 255"
 		Slider.TrackColor			"31 31 31 255"
 		Slider.DisabledTextColor1	"117 117 117 255"
 		Slider.DisabledTextColor2	"30 30 30 255"
@@ -170,57 +171,115 @@ Scheme
 		TextEntry.BgColor			"TransparentBlack"
 		TextEntry.CursorColor		"OffWhite"
 		TextEntry.DisabledTextColor	"DullWhite"
-		TextEntry.DisabledBgColor	"65 74 96 255"
+		TextEntry.DisabledBgColor	"Blank"
 		TextEntry.SelectedTextColor	"Black"
-		TextEntry.SelectedBgColor	"LightBlue"
-		TextEntry.OutOfFocusSelectedBgColor	"LightBlue"
+		TextEntry.SelectedBgColor	"Orange"
+		TextEntry.OutOfFocusSelectedBgColor	"255 155 0 128"
 		TextEntry.FocusEdgeColor	"0 0 0 196"
 
 		ToggleButton.SelectedTextColor	"White"
 
 		Tooltip.TextColor			"0 0 0 196"
-		Tooltip.BgColor				"LightBlue"
+		Tooltip.BgColor				"Orange"
 
 		TreeView.BgColor			"TransparentBlack"
 
-		WizardSubPanel.BgColor		"65 74 96 255"
+		WizardSubPanel.BgColor		"Blank"
 
 		// scheme-specific colors
-		MainMenu.TextColor			"White"
-		MainMenu.ArmedTextColor		"200 200 200 255"
+		MainMenu.TextColor			"White"				[$WIN32]
+		MainMenu.TextColor			"200 200 200 255"	[$X360]
+		MainMenu.ArmedTextColor		"200 200 200 255"	[$WIN32]
+		MainMenu.ArmedTextColor		"White"				[$X360]
 		MainMenu.DepressedTextColor	"192 186 80 255"
-		MainMenu.MenuItemHeight		"30"
+		MainMenu.MenuItemHeight		"14"				
+		MainMenu.MenuItemHeight			"22"				[$X360]
+		MainMenu.MenuItemHeight_hidef	"32"				[$X360]
 		MainMenu.Inset				"32"
+		MainMenu.Backdrop			"0 0 0 156"
 
 		Console.TextColor			"OffWhite"
 		Console.DevTextColor		"White"
 
 		NewGame.TextColor			"White"
 		NewGame.FillColor			"0 0 0 255"
-		NewGame.SelectionColor		"LightBlue"
+		NewGame.SelectionColor		"Orange"			[$WIN32]
+		NewGame.SelectionColor		"0 0 0 255"			[$X360]
 		NewGame.DisabledColor		"128 128 128 196"
+
+		MessageDialog.MatchmakingBG			"46 43 42 255"	[$X360]
+		MessageDialog.MatchmakingBGBlack			"22 22 22 255"	[$X360]
+		
+		MatchmakingMenuItemTitleColor			"200 184 151 255"	[$X360]
+		MatchmakingMenuItemDescriptionColor		"200 184 151 255"	[$X360]
+
+		"QuickListBGDeselected"		"AchievementsDarkGrey"
+	 	"QuickListBGSelected"           "AchievementsLightGrey"
 	}
 
+	//////////////////////// BITMAP FONT FILES /////////////////////////////
 	//
+	// Bitmap Fonts are ****VERY*** expensive static memory resources so they are purposely sparse
+	BitmapFontFiles
+	{
+		// UI buttons, custom font, (256x64)
+		"Buttons"		"materials/vgui/fonts/buttons_32.vbf"
+	}
+
 	//////////////////////// FONTS /////////////////////////////
 	//
 	// describes all the fonts
-	// font options: italic, underline, strikeout, antialias, dropshadow, outline, tall, blur, scanlines
-	//   ?: custom, bitmap, rotary, additive
-	
 	Fonts
 	{
 		// fonts are used in order that they are listed
 		// fonts listed later in the order will only be used if they fulfill a range not already filled
 		// if a font fails to load then the subsequent fonts will replace
-		
-		// default font used for regular text throughout
+		// fonts are used in order that they are listed
+		"DebugFixed"
+		{
+			"1"
+			{
+				"name"		"Courier New"
+				"tall"		"10"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		// fonts are used in order that they are listed
+		"DebugFixedSmall"
+		{
+			"1"
+			{
+				"name"		"Courier New"
+				"tall"		"7"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		"DefaultFixedOutline"
+		{
+			"1"
+			{
+				"name"		 "Lucida Console" [!$OSX]
+				"name"		 "Lucida Console" [$X360]
+				"name"		 "Verdana" [$OSX]
+				"tall"		"14" [$LINUX]
+				"tall"		"11" [$OSX]
+				"tall"		 "10"
+				"tall_lodef" "15"
+				"tall_hidef" "20"
+				"weight"	 "0"
+				"outline"	 "1"
+			}
+		}
 		"Default"
 		{
 			"1"
 			{
-				"name"		"Tahoma"
-				"tall"		"16"
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana" [$OSX]
+				"tall"		"16" [!$LINUX]
+				"tall"		"18" [$LINUX]
 				"weight"	"500"
 			}
 		}
@@ -228,8 +287,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Tahoma"
-				"tall"		"16"
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana Bold" [$POSIX]
+				"tall"		"16" [!$LINUX]
+				"tall"		"18" [$LINUX]
 				"weight"	"1000"
 			}
 		}
@@ -237,8 +298,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Tahoma"
-				"tall"		"16"
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana" [$OSX]
+				"tall"		"16" [!$LINUX]
+				"tall"		"18" [$LINUX]
 				"weight"	"500"
 				"underline" "1"
 			}
@@ -247,8 +310,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Tahoma"
-				"tall"		"13"
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana" [$OSX]
+				"tall"		"12" [!$POSIX]
+				"tall"		"13" [$POSIX]
 				"weight"	"0"
 			}
 		}
@@ -256,7 +321,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Tahoma"
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana" [$OSX]
 				"tall"		"13"
 				"weight"	"0"
 				"dropshadow" "1"
@@ -266,7 +332,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Tahoma"
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana" [$OSX]
 				"tall"		"12"
 				"weight"	"0"
 			}
@@ -276,21 +343,211 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Tahoma"
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana" [$OSX]
 				"tall"		"18"
 				"weight"	"0"
 			}
 		}
-		// DefaultExtraLarge
-		"DefaultExtraLarge"
+		"UiBold"
+		{
+			"1"	[$WIN32]
+			{
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana" [$OSX]
+				"tall"		"12" [!$LINUX]
+				"tall"		"15" [$LINUX]
+				"weight"	"1000"
+			}
+			"1"	[$X360]
+			{
+				"name"		"Tahoma"
+				"tall"		"24"
+				"weight"	"2000"
+				"outline"	"1"
+			}
+		}
+		"ChapterTitle"	[$X360]
 		{
 			"1"
 			{
-				"name"		"UniversLTStd-Cn"		
-				"tall"		"36"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"			"Tahoma"
+				"tall"			"20"
+				"tall_hidef"	"28"
+				"weight"		"2000"
+				"outline"		"1"
+			}
+		}
+		"ChapterTitleBlur"	[$X360]
+		{
+			"1"
+			{
+				"name"			"Tahoma"
+				"tall"			"20"
+				"tall_hidef"	"28"
+				"weight"		"2000"
+				"blur"			"3"
+				"blur_hidef"	"5"
+			}
+		}
+		"MenuLarge"
+		{
+			"1"	[$OSX]
+			{
+				"name"		"Helvetica Bold"
+				"tall"		"20"
+				"antialias" "1"
+				"yres"		"1 1080"
+			}
+			"1"	[$LINUX]
+			{
+				"name"		"Verdana"
+				"tall"		"24"
+				"weight"	"600"
+				"antialias" "1"
+				"yres"		"1 1080"
+			}
+			"1"	[$WINDOWS]
+			{
+				"name"		"Verdana" 
+				"tall"		"16"
+				"weight"	"600"
+				"antialias" "1"
+				"yres"		"1 1080"
+			}
+			"1"	[$X360]
+			{
+				"name"		"Verdana"
+				"tall"			"14"
+				"tall_hidef"	"20"
+				"weight"	"1200"
+				"antialias" "1"
+				"outline" "1"
+				"yres"		"1 1080"
+			}
+			"2" // Proportional
+			{
+				"name"		"Verdana" 
+				"tall"		"11"
+				"weight"	"600"
+				"antialias" "1"
+			}
+		}
+		"MenuHeadingLarge"
+		{
+			"1"
+			{
+				"name"		"Verdana" 
+				"tall"		"20"
+				"weight"	"600"
+				"antialias" "1"
+				"yres"		"1 1080"
+			}
+			"2" // Proportional
+			{
+				"name"		"Verdana" 
+				"tall"		"20"
+				"weight"	"600"
+				"antialias" "1"
+			}
+		}
+		"MenuHeadingSmall"
+		{
+			"1"
+			{
+				"name"		"Verdana" 
+				"tall"		"13"
+				"weight"	"600"
+				"antialias" "1"
+				"yres"		"1 1080"
+			}
+			"2" // Proportional
+			{
+				"name"		"Verdana" 
+				"tall"		"13"
+				"weight"	"600"
+				"antialias" "1"
+			}
+		}
+		"MenuLargeUnscaled"
+		{
+			"name"		"Verdana" 
+			"tall"		"16"
+			"weight"	"600"
+			"antialias" "1"
+		}
+		"AchievementTitleFont"
+		{
+			"1"
+			{
+				"name"		"Verdana"
+				"tall"		"20"
+				"weight"	"1200"
+				"antialias" "1"
+				"outline" "1"
+			}
+		}
+		
+		"AchievementTitleFontSmaller"
+		{
+			"1"
+			{
+				"name"		"Verdana"
+				"tall"		"18"
+				"weight"	"1200"
+				"antialias" "1"
+				//"outline" "1"
+			}
+		}
+		
+		
+		"AchievementDescriptionFont"
+		{
+			"1"
+			{
+				"name"		"Verdana"
+				"tall"		"15"
+				"weight"	"1200"
+				"antialias" "1"
+				"outline" "1"
+				"yres"		"0 480"
+			}
+			"2"
+			{
+				"name"		"Verdana"
+				"tall"		"20"
+				"weight"	"1200"
+				"antialias" "1"
+				"outline" "1"
+				"yres"	 "481 10000"
+			}
+		}
+		
+		GameUIButtons
+		{
+			"1"	[$X360]
+			{
+				"bitmap"	"1"
+				"name"		"Buttons"
+				"scalex"	"0.63"
+				"scaley"	"0.63"
+				"scalex_hidef"	"1.0"
+				"scaley_hidef"	"1.0"
+				"scalex_lodef"	"0.75"
+				"scaley_lodef"	"0.75"
+			}
+		}
+		"ConsoleText"
+		{
+			"1"
+			{
+				"name"		 "Lucida Console" [!$OSX]
+				"name"		 "Lucida Console" [$X360]
+				"name"		 "Verdana" [$OSX]
+				"tall"		"11" [$OSX]
+				"tall"		"14" [$LINUX]
+				"tall"		"10"
+				"weight"	"500"
 			}
 		}
 
@@ -303,188 +560,375 @@ Scheme
 				"tall"		"14"
 				"weight"	"0"
 				"symbol"	"1"
-				"range"		"0x0000 0x007F"	//	Basic Latin
-				"antialias"	"1"
 			}
 		}
-		
-		// specific fonts for the main resolutions
-		// Resolution	:	Header	:	Regular	:	Small
-		// -640			14		10		8
-		// 800			16		12		10
-		// 1024			18		14		12
-		// 1280+		20		16		14		
-		"Sansman8"
+
+		// this is the symbol font
+		"MarlettLarge"
 		{
 			"1"
 			{
-				"name"		"UniversLTStd-Cn"	
-				"tall"		"8"
+				"name"		"Marlett"
+				"tall"		"20"
+				"weight"	"0"
+				"symbol"	"1"
+			}
+		}
+
+		"Trebuchet24"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"24"
 				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
 			}
 		}
-		"Sansman10"
+
+		"Trebuchet20"
 		{
 			"1"
 			{
-				"name"		"UniversLTStd-Cn"
+				"name"		"Trebuchet MS"
+				"tall"		"20"
+				"weight"	"900"
+			}
+		}
+
+		"Trebuchet18"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"18"
+				"weight"	"900"
+			}
+		}
+
+		// HUD numbers
+		// We use multiple fonts to 'pulse' them in the HUD, hence the need for many of near size
+		"HUDNumber"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"40"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber1"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"41"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber2"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"42"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber3"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"43"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber4"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"44"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber5"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"45"
+				"weight"	"900"
+			}
+		}
+		"DefaultFixed"
+		{
+			"1"
+			{
+				"name"		 "Lucida Console" [$WINDOWS]
+				"name"		 "Lucida Console" [$X360]
+				"name"		 "Verdana" [$POSIX]
+				"tall"		"11" [$POSIX]
 				"tall"		"10"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"weight"	"0"
 			}
+//			"1"
+//			{
+//				"name"		"FixedSys"
+//				"tall"		"20"
+//				"weight"	"0"
+//			}
 		}
-		"Sansman12"
+
+		"DefaultFixedDropShadow"
 		{
 			"1"
 			{
-				"name"		"UniversLTStd-Cn"	
+				"name"		 "Lucida Console" [$WINDOWS]
+				"name"		 "Lucida Console" [$X360]
+				"name"		 "Verdana" [$OSX]
+				"name"		 "Courier" [$LINUX]
+				"tall"		"14" [$LINUX]
+				"tall"		"11" [$POSIX]
+				"tall"		"10"
+				"weight"	"0"
+				"dropshadow" "1"
+			}
+//			"1"
+//			{
+//				"name"		"FixedSys"
+//				"tall"		"20"
+//				"weight"	"0"
+//			}
+		}
+
+		"CloseCaption_Normal"
+		{
+			"1"
+			{
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana" [$OSX]
+				"tall"		"12"
+				"weight"	"500"
+				"antialias"	"1"
+			}
+		}
+		"CloseCaption_Italic"
+		{
+			"1"
+			{
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana Italic" [$OSX]
+				"tall"		"12"
+				"weight"	"500"
+				"italic"	"1"
+				"antialias"	"1"
+			}
+		}
+		"CloseCaption_Bold"
+		{
+			"1"
+			{
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana Bold" [$OSX]
+				"tall"		"12"
+				"weight"	"900"
+				"antialias"	"1"
+			}
+		}
+		"CloseCaption_BoldItalic"
+		{
+			"1"
+			{
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana Bold Italic" [$OSX]
+				"tall"		"12"
+				"weight"	"900"
+				"italic"	"1"
+				"antialias"	"1"
+			}
+		}
+		"CloseCaption_Small"
+		{
+			"1"
+			{
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana" [$OSX]
 				"tall"		"12"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
 			}
 		}
-		"Sansman14"
+
+		TitleFont
 		{
 			"1"
 			{
-				"name"		"UniversLTStd-Cn"	
-				"tall"		"14"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"name"		"HalfLife2"
+				"tall"		"72"
+				"weight"	"400"
 				"antialias"	"1"
-			}
-		}	
-		"Sansman16"
-		{
-			"1"
-			{
-				"name"		"UniversLTStd-Cn"	
-				"tall"		"16"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
-			}
-		}	
-		"Sansman18"
-		{
-			"1"
-			{
-				"name"		"UniversLTStd-Cn"	
-				"tall"		"18"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"custom"	"1"
 			}
 		}
-		"Sansman20"
+
+		TitleFont2
 		{
 			"1"
 			{
-				"name"		"UniversLTStd-Cn"	
-				"tall"		"20"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"name"		"HalfLife2"
+				"tall"		"120"
+				"weight"	"400"
 				"antialias"	"1"
+				"custom"	"1"
 			}
 		}
-		"CleanHUD"
+
+		AppchooserGameTitleFont	[$X360]
 		{
 			"1"
 			{
-				"name"		"Microsoft Sans Serif"
-				"tall"		"17"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"			"Trebuchet MS"
+				"tall"			"16"
+				"tall_hidef"	"24"
+				"weight"		"900"
+				"antialias"		"1"
 			}
 		}
-		"Courier"
+
+		AppchooserGameTitleFontBlur	[$X360]
 		{
 			"1"
 			{
-				"name"		"Courier New"
-				"tall"		"16"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"			"Trebuchet MS"
+				"tall"			"16"
+				"tall_hidef"	"24"
+				"weight"		"900"
+				"blur"			"3"
+				"blur_hidef"	"5"
+				"antialias"		"1"
 			}
 		}
-		"SmallCourier"
+		
+		StatsTitle	[$WIN32]
 		{
 			"1"
 			{
-				"name"		"Courier New"
-				"tall"		"8"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"		"Arial" [!$POSIX]
+				"name"		"Verdana Bold" [$POSIX]
+				"weight"		"2000"
+				"tall"			"20"
+				"antialias"		"1"
 			}
 		}
-		"Verdana"
+		
+		StatsText	[$WIN32]
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"16"
-				"weight"	"450"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"		"Arial" [!$POSIX]
+				"name"		"Verdana Bold" [$POSIX]
+				"weight"		"2000"
+				"tall"			"18"
+				"antialias"		"1"
 			}
 		}
-		"VerdanaSmall"
+		
+		AchievementItemTitle	[$WIN32]
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"9"
-				"weight"	"900"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"		"Arial" [!$POSIX]
+				"name"		"Verdana Bold" [$POSIX]
+				"weight"		"1500"
+				"tall"			"16" [!$POSIX]
+				"tall"			"18" [$POSIX]
+				"antialias"		"1"
 			}
 		}
-		"CampaignTitle"
+
+		AchievementItemDate	[$WIN32]
 		{
 			"1"
 			{
-				"name"		"UniversLTStd-Cn"
-				"tall"		"64"
-				"weight"	"450"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
+				"name"		"Arial" [!$POSIX]
+				"name"		"Verdana Bold" [$POSIX]
+				"weight"		"1500"
+				"tall"			"16"
+				"antialias"		"1"
 			}
 		}
-		"CampaignTitleBlur"
+
+		
+		StatsPageText
 		{
 			"1"
 			{
-				"name"		"UniversLTStd-Cn"
-				"tall"		"64"
-				"weight"	"450"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
-				"blur"		"5"
+				"name"		"Arial" [!$POSIX]
+				"name"		"Verdana Bold" [$POSIX]
+				"weight"		"1500"
+				"tall"			"14" [!$POSIX]
+				"tall"			"16" [$POSIX]
+				"antialias"		"1"
 			}
 		}
-		// asw - infested small font for mission chooser
-		"MissionChooserFont"
+		
+		AchievementItemTitleLarge	[$WIN32]
+		{
+			"1"
+			{
+				"name"		"Arial" [!$POSIX]
+				"name"		"Verdana Bold" [$POSIX]
+				"weight"		"1500"
+				"tall"			"18" [!$POSIX]
+				"tall"			"19" [$POSIX]
+				"antialias"		"1"
+			}
+		}
+		
+		AchievementItemDescription	[$WIN32]
+		{
+			"1"
+			{
+				"name"		"Arial" [!$POSIX]
+				"name"		"Verdana" [$OSX]
+				"weight"		"1000"
+				"tall"			"14" [!$POSIX]
+				"tall"			"15" [$POSIX]
+				"antialias"		"1"
+			}
+		}
+
+		
+		"ServerBrowserTitle"
+		{
+			"1"
+			{
+				"name"		"Tahoma" [!$OSX]
+				"name"		"Verdana" [$OSX]
+				"tall"		"35"
+				"tall_lodef"	"40"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+
+		"ServerBrowserSmall"
 		{
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"11"
+				"tall"		"16"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"antialias"	"1"
-				"yres"	"1 599"
+				"yres"	"480 599"
 			}
 			"2"
 			{
 				"name"		"Tahoma"
-				"tall"		"12"
+				"tall"		"16"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"600 767"
@@ -496,24 +940,28 @@ Scheme
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"768 1023"
+				"antialias"	"1"
 			}
 			"4"
 			{
 				"name"		"Tahoma"
-				"tall"		"16"
+				"tall"		"19"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"1024 1199"
+				"antialias"	"1"
 			}
 			"5"
 			{
 				"name"		"Tahoma"
-				"tall"		"16"
+				"tall"		"19"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"1200 10000"
+				"yres"	"1200 6000"
+				"antialias"	"1"
 			}
 		}
+	
 	}
 
 	//
@@ -522,22 +970,17 @@ Scheme
 	// describes all the border types
 	Borders
 	{
-	    BaseBorder		DepressedBorder
+		BaseBorder		DepressedBorder
 		ButtonBorder	RaisedBorder
 		ComboBoxBorder	DepressedBorder
 		MenuBorder		RaisedBorder
 		BrowserBorder	DepressedBorder
-		PropertySheetBorder	NoBorder
-		
+		PropertySheetBorder	RaisedBorder
+
 		FrameBorder
 		{
 			// rounded corners for frames
 			"backgroundtype" "2"
-		}
-		
-		NoBorder
-		{
-			"backgroundtype" "0"
 		}
 
 		DepressedBorder
@@ -619,46 +1062,6 @@ Scheme
 			}
 		}
 		
-		BaseBorder
-		{
-			"inset" "0 0 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "BorderDark"
-					"offset" "0 1"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "BorderBright"
-					"offset" "1 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "BorderDark"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "BorderBright"
-					"offset" "0 0"
-				}
-			}
-		}
-		
 		TitleButtonBorder
 		{
 			"backgroundtype" "0"
@@ -676,12 +1079,13 @@ Scheme
 
 		ScrollBarButtonBorder
 		{
-			"inset" "2 2 0 0"
+			"inset" "2 2 0 0" [!$OSX]
+			"inset" "-3 2 0 0" [$OSX]
 			Left
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "0 1"
 				}
 			}
@@ -690,7 +1094,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "1 0"
 				}
 			}
@@ -699,7 +1103,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderBright"
+					"color" "Border.Bright"
 					"offset" "0 0"
 				}
 			}
@@ -708,15 +1112,16 @@ Scheme
 			{
 				"1"
 				{
-					"color" "BorderDark"
+					"color" "Border.Dark"
 					"offset" "0 0"
 				}
 			}
-		}		
-
+		}
+		
 		ScrollBarButtonDepressedBorder
 		{
-			"inset" "2 2 0 0"
+			"inset" "2 2 0 0" [!$OSX]
+			"inset" "-3 2 0 0" [$OSX]
 			Left
 			{
 				"1"
@@ -956,126 +1361,23 @@ Scheme
 				}
 			}
 		}
-		ASWBriefingButtonBorder
-		{
-			"inset" "1 1 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "LightBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "LightBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "LightBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "LightBlue"
-					"offset" "0 0"
-				}
-			}
-		}
-		ASWBriefingButtonBorderDisabled
-		{
-			"inset" "1 1 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "GreyBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "GreyBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "GreyBlue"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "GreyBlue"
-					"offset" "0 0"
-				}
-			}
-		}
-		ASWMapLabelBorder
-		{
-			"inset" "1 1 1 1"
-			Left
-			{
-				"1"
-				{
-					"color" "White"
-					"offset" "0 0"
-				}
-			}
-
-			Right
-			{
-				"1"
-				{
-					"color" "White"
-					"offset" "0 0"
-				}
-			}
-
-			Top
-			{
-				"1"
-				{
-					"color" "White"
-					"offset" "0 0"
-				}
-			}
-
-			Bottom
-			{
-				"1"
-				{
-					"color" "White"
-					"offset" "0 0"
-				}
-			}
-		}
 	}
+
+	//////////////////////// CUSTOM FONT FILES /////////////////////////////
+	//
+	// specifies all the custom (non-system) font files that need to be loaded to service the above described fonts
 	CustomFontFiles
 	{
-		"1"		"vgui/fonts/unltcyr5.ttf"
+		"1"		"resource/HALFLIFE2.ttf"
+		"2"		"resource/HL2EP2.ttf"	
+		"3"		"resource/marlett.ttf"
+
+		"4"		"resource/linux_fonts/DejaVuSans.ttf"
+		"5"		"resource/linux_fonts/DejaVuSans-Bold.ttf"
+		"6"		"resource/linux_fonts/DejaVuSans-BoldOblique.ttf"
+		"7"		"resource/linux_fonts/DejaVuSans-Oblique.ttf"
+		"8"		"resource/linux_fonts/LiberationSans-Regular.ttf"
+		"9"		"resource/linux_fonts/LiberationSans-Bold.ttf"
+		"10"		"resource/linux_fonts/LiberationMono-Regular.ttf"
 	}
 }
