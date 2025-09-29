@@ -1,6 +1,5 @@
 // load the base configuration
 //exec default.cfg
-
 // Setup custom controller
 exec joystick.cfg
 
@@ -12,8 +11,6 @@ exec autoexec.cfg
 //
 stuffcmds
 
-// display the startup level
-//startupmenu
+hostname "Half-Life 2 Deathmatch"
 
-// FOR XBOX CERT
-sv_unlockedchapters 99
+mp_forcerespawn 0

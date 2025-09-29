@@ -18,7 +18,7 @@
 		"wave"	"*#music\portal_self_esteem_fund.mp3"
 		"wave"	"*#music\portal_no_cake_for_you.mp3"
 		"wave"	"*#music\portal_4000_degrees_kelvin.mp3"
-		"wave"	"*#music\portal_stop_what_are_you_doing.mp3"
+		"wave"	"*#music\portal_stop_what_you_are_doing.mp3"
 		"wave"	"*#music\portal_party_escort.mp3"
 		"wave"	"*#music\portal_you_cant_escape_you_know.mp3"
 		"wave"	"*#music\portal_youre_not_a_good_person.mp3"
